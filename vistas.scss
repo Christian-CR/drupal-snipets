@@ -1,0 +1,104 @@
+
+// vistas
+
+
+
+.view{
+	.view-content{
+		text-align: center;
+		.views-row{
+			@include viewsnormal;
+		}
+	}
+}
+
+// productos // servicios
+
+.productos, .servicios {
+	.wrapProductos, .wrapServicios {
+		border: solid 1px $grisClaro;
+		padding: 20px 10px;
+		vertical-align: top;
+		@include col-3;
+	}
+
+	@each $varios in producto servicios{
+		.views-field-field-foto-#{$varios}{
+			img{
+				width: 100%;
+				height: auto;
+				&:hover {
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+
+	.views-field-title{
+		padding: 16px;
+		span{
+			a{
+				@include linksViews; // estilos exclusivos para el título
+				@include transicion(300ms);
+				&:hover {
+					color: $tomate;
+				}
+			}
+		}
+	}
+}
+
+// solo servicios
+.servicios {
+	.wrapServicios {
+		.views-field-body {
+			p{
+				font-size: 0.8em;
+			}
+		}
+	}
+}
+
+// solo productos
+.productos {
+	.wrapProductos {
+		position: relative;
+		overflow: hidden;
+		cursor: pointer;
+		.views-field-body {
+			position: absolute;
+			top: 105%;
+			width: 94%;
+			@include transicion(500ms);
+			p{
+				font-size: 0.75em;
+				font-weight: normal;
+				color: $blanco;
+				width: 100%;
+				padding: 20px;
+				background: rgba(0,0,0,0.8);
+			}
+		}
+		&:hover {
+			.views-field-body {
+				top: 12%;
+			}
+		}
+	}
+}
+
+// pager
+
+ul.pager{
+	li{
+		a{
+			background: $pink;
+			color: $blanco;
+			border: none;
+			&:hover{
+				background: $morado;
+			}
+		}
+	}
+}
+

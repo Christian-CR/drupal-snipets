@@ -1,0 +1,61 @@
+
+// colores
+
+$blanco : #FFF;
+$negro : #000;
+$gris : #666;
+$grisOscuro: #333;
+$grisClaro : #efefef;
+$grisClaro2 : #e8e8e8;
+$rojo : #c7535b;
+$morado: #7e2b56;
+$tomate : #dd705c;
+$azul : #050e53;
+$pink : pink;
+
+// tipografía
+
+$tipo: 'Montserrat', sans-serif;
+$tipo2: 'Oswald', sans-serif;
+$times: 'Times', serif;
+// mixins
+
+@mixin transicion($val){
+	-webkit-transition: $val;
+	-moz-transition: $val;
+	-o-transition: $val;
+	transition: $val;
+}
+
+@mixin background($val){
+	 -webkit-background-size: $val;
+	 -moz-background-size: $val;
+	 -o-background-size: $val;
+	 background-size: $val;
+}
+
+@mixin linksViews{ // estilos para el title de los productos en views productos
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: $times;
+	color: $gris;
+}
+
+@mixin viewsnormal{
+	margin-bottom: 20px;
+}
+
+@mixin col-3{
+	display: inline-block;
+	width: 32%;
+	min-width: 280px;
+}
+
+@mixin col-4{
+	display: inline-block;
+	width: 22%;
+	min-width: 280px;
+}
+
+
+

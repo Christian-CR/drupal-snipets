@@ -1,0 +1,90 @@
+
+//  =============  MENU 
+
+
+#block-menu-menu-top-menu{
+	h2{
+		display: none;
+	}
+	ul.menu{
+		    text-align: center;
+		    border-top: solid 1px $morado;
+		    padding-top: 14px;
+		    margin-top: 20px;
+		li{
+			display: inline-block;
+			position: relative;
+			padding: 0;
+    		margin: 0;
+			> a{
+				padding: 10px 7px;
+				color: $morado;
+				font-size: 0.9em;
+				text-decoration: none;
+				text-transform: uppercase;
+				&:hover{
+					background: $morado;
+					color: $blanco;
+				}
+			}
+			ul.menu{
+				display: none;
+				position: absolute;
+				left: 0;
+				top: 125%;
+				padding: 0px;
+				max-width: 200px!important;
+				margin-top: 0px;
+				background: $tomate;
+				li{
+					display: block;
+					padding: 8px;
+					a{
+						width: 100%;
+						color: $blanco;
+						background: transparent;
+						padding: 0px;
+						display: block;
+						font-size: 0.8em;
+						@include transicion(300ms);
+						&:hover {
+							
+						}
+					}
+					&:hover{
+						background: $morado;
+						a{
+							&:hover{
+								background: $morado;
+							}
+						}
+					}
+				}
+			}
+		}
+		li:last-child{
+			a{
+				color: $blanco;
+				background: $morado;
+				&:hover{
+					background: $tomate;
+				}
+			}
+		}
+	}
+}
+
+.wrapMenuToggle{
+	display:none;
+
+	.menurayas, .menuequis{
+		cursor: pointer;
+	}
+	.menuequis{
+		display: none;
+	}
+}
+
+
+
+

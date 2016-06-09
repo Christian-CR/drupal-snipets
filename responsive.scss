@@ -1,0 +1,110 @@
+
+@media only screen and (min-width: 1201px) {
+	#block-menu-menu-top-menu{
+		display: block;
+	}
+}
+@media only screen and (min-width: 993px) {
+	.not-front {
+		#block-menu-menu-top-menu {
+			display: inline-block;
+		}
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	#block-menu-menu-top-menu{
+		ul.menu{
+			li{
+				a{
+					font-size: 0.7em!important;
+					padding: 10px 3px!important;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	#block-block-12 {
+		display: block!important;
+	}
+
+	.wrapMenuToggle{
+		display:block!important;
+		.menurayas{
+			
+		}
+	}
+
+	// menu mobil
+	#block-block-1{ 
+		width: 100%!important;
+		.logo{
+			width: 100%!important;
+			background-position-x: 50%!important;
+			@include background(12%!important);
+			background-repeat: no-repeat;
+		}
+	}
+	#block-menu-menu-top-menu{
+		display: none;
+		width: 100%!important;
+	}
+	
+	// ************  menu ****** -- //
+	#block-menu-menu-top-menu{
+		display: none;
+		ul.menu{
+			padding: 0!important;
+			li{
+				display: block!important;
+				    background: $morado;
+				    border-bottom: dotted 1px white;
+				    padding: 9px!important;
+				    @include transicion(200ms);
+				a{
+					font-size: 1em!important;
+					color: $blanco!important;
+					&:hover{
+						color: $tomate!important;
+					}
+				}
+				&:hover, &:focus{
+					background: $tomate;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 991px) { 
+	.form-text, .form-textarea, 
+	.block-superfish select, 
+	.block-search 
+	.form-submit { 
+		background-image: none;
+	} 
+}
+
+@media only screen and (max-width: 768px) {
+	#block-menu-menu-top-menu{
+		ul.menu{
+			li{ 
+				display: block!important;
+				a{
+					font-size: 1em!important;
+				}
+			}
+		}
+	} 
+}
+
+@media only screen and (max-width: 480px){
+	#block-block-1{
+		.logo{
+			@include background(22%!important);
+		}
+	}
+}
+
