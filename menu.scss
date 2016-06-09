@@ -3,9 +3,11 @@
 
 
 #block-menu-menu-top-menu{
+	// esconde el h2 obvio
 	h2{
 		display: none;
 	}
+	
 	ul.menu{
 		    text-align: center;
 		    border-top: solid 1px $morado;
@@ -62,6 +64,7 @@
 				}
 			}
 		}
+		// cambia el color de background del último item
 		li:last-child{
 			a{
 				color: $blanco;
