@@ -1,10 +1,13 @@
 
 @media only screen and (min-width: 1201px) {
+	// hasta menos de 1201px el menu se despliega a todo el ancho 
 	#block-menu-menu-top-menu{
 		display: block;
 	}
 }
 @media only screen and (min-width: 993px) {
+	/* hace que en todas las paginas excepto en la de inicio, el menu se despliegue
+	al lado del logo */ 
 	.not-front {
 		#block-menu-menu-top-menu {
 			display: inline-block;
@@ -13,6 +16,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
+	// hasta un máximo de 1200px el la letra se reduce
 	#block-menu-menu-top-menu{
 		ul.menu{
 			li{
@@ -26,10 +30,7 @@
 }
 
 @media only screen and (max-width: 992px) {
-	#block-block-12 {
-		display: block!important;
-	}
-
+	// hace que aparezca la rayas del menu toggle, pero no la equis...
 	.wrapMenuToggle{
 		display:block!important;
 		.menurayas{
@@ -38,6 +39,7 @@
 	}
 
 	// menu mobil
+	// hace que el logo se centre el el ancho de la ventana
 	#block-block-1{ 
 		width: 100%!important;
 		.logo{
@@ -47,6 +49,7 @@
 			background-repeat: no-repeat;
 		}
 	}
+	// esconde el menu
 	#block-menu-menu-top-menu{
 		display: none;
 		width: 100%!important;
@@ -55,6 +58,8 @@
 	// ************  menu ****** -- //
 	#block-menu-menu-top-menu{
 		display: none;
+		
+		// hace que el menu se despliegue a todo el ancho
 		ul.menu{
 			padding: 0!important;
 			li{
@@ -78,16 +83,8 @@
 	}
 }
 
-@media (max-width: 991px) { 
-	.form-text, .form-textarea, 
-	.block-superfish select, 
-	.block-search 
-	.form-submit { 
-		background-image: none;
-	} 
-}
-
 @media only screen and (max-width: 768px) {
+	// vuelve a hacer grande texto
 	#block-menu-menu-top-menu{
 		ul.menu{
 			li{ 
@@ -101,6 +98,7 @@
 }
 
 @media only screen and (max-width: 480px){
+	// centra el logo en celular. EN ESTE CASO EL LOGO ESTA EN UN BACKGROUND
 	#block-block-1{
 		.logo{
 			@include background(22%!important);
