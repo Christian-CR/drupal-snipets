@@ -32,6 +32,7 @@
 			ul.menu{
 				display: none;
 				position: absolute;
+				z-index:9; // use el z-index que necesite
 				left: 0;
 				top: 125%;
 				padding: 0px;
