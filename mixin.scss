@@ -56,6 +56,12 @@ $times: 'Times', serif;
 	width: 22%;
 	min-width: 280px;
 }
+// requiere compass/css3
+@mixin flexo{
+	@include display-flex(flex);
+	@include align-items(flex-end);
+	@include justify-content(center);
+}
 
 
 
