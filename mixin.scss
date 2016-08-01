@@ -63,5 +63,16 @@ $times: 'Times', serif;
 	@include justify-content(center);
 }
 
+@mixin flexo2{
+	@include display-flex(flex);
+	@include align-items(start);
+	@include justify-content(center);
+}
+
+@mixin flexo3{
+	@include display-flex(flex);
+	@include align-items(center);
+	@include justify-content(center);
+}
 
 
