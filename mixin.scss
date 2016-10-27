@@ -75,4 +75,27 @@ $times: 'Times', serif;
 	@include justify-content(center);
 }
 
+// funciones
+
+// cols
+$at : 100%;
+$un : 0.833;
+
+@function colms($n){
+	@return $at / $n;
+}
+@function colms2($y){
+	@return ($y * 10) * $un+'%';
+}
+// divide el 100% utilizando como divisor el parámetro
+.ejemplo1 {
+	width: colms(5);
+}
+// En este caso el parámetro funciona como multiplicador del valor $un
+.ejemplo2 {
+	width: colms2(6);
+}
+
+
+
 
