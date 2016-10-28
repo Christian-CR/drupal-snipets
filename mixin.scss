@@ -90,8 +90,10 @@ $un : 0.833;
 	@return $at / $n;
 }
 @function colms2($y){
-	@return ($y * 10) * $un+'%';
+	$pres : percentage(($y / 10) * $un);
+	@return $pres;
 }
+
 // divide el 100% utilizando como divisor el parámetro
 .ejemplo1 {
 	width: colms(5);
