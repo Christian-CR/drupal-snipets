@@ -101,6 +101,15 @@ $un : 0.833;
 	width: colms2(6);
 }
 
+// each & nth
 
+@each $p in {
+	clase1 black,
+	clase2 black + 20,
+	clase3 black + 40,
+	clase4 black + 60
+}{
+	.#{nth($p,1)} {background:#{nth($p,2)}; }
+}
 
 
