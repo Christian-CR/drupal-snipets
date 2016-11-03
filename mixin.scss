@@ -85,6 +85,7 @@ $times: 'Times', serif;
 // cols
 $at : 100%;
 $un : 0.833;
+$maxcols : 12;
 
 @function colms($n){
 	@return $at / $n;
