@@ -29,6 +29,17 @@ $susy: (
 	gutter-position: inside
 );
 
+$widelayout: (
+	columns: 24,
+	gutters: 1/4,
+	output: float,
+	math: fluid,
+	gutter-position: inside
+);
+
+/// para usar solo el widelayout:
+@include layout($widelayout);
+
 @mixin transicion($val){
 	-webkit-transition: $val;
 	-moz-transition: $val;
