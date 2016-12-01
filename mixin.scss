@@ -37,8 +37,23 @@ $widelayout: (
 	gutter-position: inside
 );
 
+// otra forma de escribirlo sería así
+@include layout(24 1/4 fluid float inside);
+
+
 /// para usar solo el widelayout:
 @include layout($widelayout);
+
+/// anidar los atributos en un layout
+@include with-layout(12){
+	body{
+	background:#eee;
+	@include container(80%); // los mixins span deben estar dentro de un container
+	}
+}
+
+
+
 
 @mixin transicion($val){
 	-webkit-transition: $val;
