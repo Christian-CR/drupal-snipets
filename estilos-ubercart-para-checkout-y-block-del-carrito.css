@@ -236,3 +236,31 @@
 		}
 	}
 }
+
+
+// ****************** // ***************************
+// ****************** REVISION DEL PEDIDO
+// ****************** // ***************************
+// oculta las casillas en donde se muestra el precio (osea $0)
+.page-user-orders{
+	table.order-pane-table{
+		thead{
+			tr{
+				th:nth-child(2) ~ th{
+						display: none;
+				}
+
+			}
+		}
+		tbody{
+			tr{
+				td:nth-child(2) ~ td{
+					display:none;
+				}
+			}
+		}
+	}
+	#order-pane-line_items{
+		display: none;
+	}
+}
