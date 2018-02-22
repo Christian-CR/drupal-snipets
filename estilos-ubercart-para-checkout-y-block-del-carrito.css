@@ -244,6 +244,9 @@
 // oculta las casillas en donde se muestra el precio (osea $0)
 .page-user-orders{
 	table.order-pane-table{
+		.order-pane thead{
+			background: $blanco;
+		}
 		thead{
 			tr{
 				th:nth-child(2) ~ th{
@@ -260,7 +263,9 @@
 			}
 		}
 	}
-	#order-pane-line_items{
+	#order-pane-line_items,
+	#order-pane-bill_to,
+	#order-pane-print_button{
 		display: none;
 	}
 }
