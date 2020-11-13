@@ -115,6 +115,39 @@ $widelayout: (
 	height: auto;
 }
 
+// gradiente en 4 esquinas
+@mixin QuadVertexColors($v0, $v1, $v2, $v3) {
+
+  background: linear-gradient(to bottom, $v0, $v2);
+
+  &::after {
+
+    content: "";
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to bottom, $v1, $v3);
+    -webkit-mask-image: linear-gradient(to left, white, transparent);
+  }
+}
+/*body {
+
+  background-color: #111111;
+  padding: 0;
+  margin: 0;
+
+  #quad {
+
+    $size: 100vh;
+
+    width: $size;
+    height: $size;
+
+    @include QuadVertexColors(red, magenta, yellow, white);
+  }
+}*/
+
+
 // funciones
 
 // cols
